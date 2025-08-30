@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma Devocional</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="navbar-logo">
+            <img src="assets/logo.png" alt="Logo" class="logo-img">
+            <span class="navbar-title">Caminho Devocional</span>
+        </div>
+        <div class="navbar-search">
+            <input type="text" placeholder="Pesquisar..." class="search-input">
+            <span class="material-icons search-icon">search</span>
+        </div>
+        <nav class="navbar-links">
+            <a href="#inicio" class="nav-link active">Início</a>
+            <a href="#produtos" class="nav-link">Produtos</a>
+            <a href="#contato" class="nav-link">Contato</a>
+        </nav>
+        <div class="navbar-actions">
+            <button class="icon-btn" title="Carrinho"><span class="material-icons">shopping_cart</span></button>
+            <button class="icon-btn" title="Perfil"><span class="material-icons">person</span></button>
+        </div>
+    </header>
+
+    <!-- Mensagem de boas-vindas -->
+    <section class="welcome-section" id="inicio">
+        <h2>Bem-vindo à Caminho Devocional</h2>
+        <p>Use este espaço para compartilhar informações, dar boas-vindas aos clientes ou destacar seus produtos incríveis.</p>
+    </section>
+
+    <section class="destaques-section">
+        <h3>Destaques</h3>
+        <div class="destaques-list" id="destaques-list">
+            <!-- Cards de destaque serão inseridos via JS -->
+        </div>
+    </section>
+
+    <!-- Promoções -->
+    <section class="promocoes-section">
+        <h3>Promoções</h3>
+        <div class="promocao-card" id="promocao-card">
+            <div class="promocao-imgs">
+                <!-- Miniaturas de imagens do produto -->
+                <div class="promocao-thumbs" id="promocao-thumbs"></div>
+                <img src="assets/produto-exemplo.png" alt="Produto" class="promocao-img" id="promocao-img">
+            </div>
+            <div class="promocao-info">
+                <span class="promocao-desconto" id="promocao-desconto">-35% OFF</span>
+                <h4 id="promocao-nome">Produto de exemplo</h4>
+                <div class="promocao-precos">
+                    <span class="promocao-preco" id="promocao-preco">R$182,00</span>
+                    <span class="promocao-preco-antigo" id="promocao-preco-antigo">R$282,00</span>
+                </div>
+                <span class="promocao-parcelas" id="promocao-parcelas">Até 12x sem juros</span>
+                <span class="promocao-frete" id="promocao-frete">Frete grátis</span>
+                <button class="promo-btn" id="promocao-comprar">Comprar</button>
+                <p class="promocao-descricao" id="promocao-descricao">Esse é um produto de exemplo! Para poder experimentar o processo de compra, você deve adicionar seus próprios produtos.</p>
+            </div>
+        </div>
+        <div class="promocao-nav">
+            <button id="prev-promocao" class="promo-btn">Anterior</button>
+            <button id="next-promocao" class="promo-btn">Próximo</button>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="footer-social">
+            <a href="#" class="social-link"><span class="material-icons">whatsapp</span></a>
+            <a href="#" class="social-link"><span class="material-icons">instagram</span></a>
+        </div>
+        <div class="footer-copyright">
+            &copy; 2025 Caminho Devocional. Todos os direitos reservados.
+        </div>
+    </footer>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="app.js"></script>
+</body>
+</html>
